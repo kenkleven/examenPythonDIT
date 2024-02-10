@@ -17,7 +17,7 @@ class Curve:
     def determine_position(self, x, y):
         if y > self._f(x) + 0.5:
             return 'above'
-        else:
+        if y < self._f(x) + 0.5:
             return 'below'
 
     def generate_points(self):
