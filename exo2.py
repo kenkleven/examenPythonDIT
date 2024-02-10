@@ -29,7 +29,7 @@ class Curve:
 
         for i in range(len(x_points)):
             if self.determine_position(x_points[i], y_points[i]) == 'above':
-                plt.plot(x_points[i], y_points[i], 'bo')
+                plt.plot(x_points[i], y_points[i], 'bx')
                 surface_bleu += 1
             else:
                 plt.plot(x_points[i], y_points[i], 'go')

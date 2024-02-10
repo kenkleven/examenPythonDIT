@@ -7,10 +7,10 @@ def f(x):
 
 # valeurs pour x
 x_curve = np.linspace(0, 1, 1000)
-x_points = np.random.rand(1000) 
+x_points = np.random.rand(1500) 
 
 # valeurs pour y 
-y_points = np.random.rand(1000)
+y_points = np.random.rand(1500)
 
 # Tracer la courbe
 plt.plot(x_curve, f(x_curve) + 0.5, 'r')
@@ -19,7 +19,7 @@ plt.plot(x_curve, f(x_curve) + 0.5, 'r')
 for i in range(len(x_points)):
     if y_points[i] > f(x_points[i]) + 0.5:
         # Point au-dessus de la courbe en bleu
-        plt.plot(x_points[i], y_points[i], 'bo')  
+        plt.plot(x_points[i], y_points[i], 'bx')  
     else:
         # Point en dessous de la courbe en vert
         plt.plot(x_points[i], y_points[i], 'go')  
